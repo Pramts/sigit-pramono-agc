@@ -18,4 +18,8 @@ public class charaMain : MonoBehaviour
         transform.position = resetPosisition;
         transform.position = new Vector3(resetPosisition.x, resetPosisition.y, 2);
     }
+
+    public void ActivatePUSpeedPower(float magnitude){
+        rig.velocity *= magnitude;
+    }
 }
